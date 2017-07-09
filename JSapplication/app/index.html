@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="node_modules/html5-boilerplate/dist/css/normalize.css">
+
+    <link rel="stylesheet" href="html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+
+    <script src="/html5-boilerplate/dist/js/vendor/modernize-2.8.3.min.js"></script>
+</head>
+<body>
+<h2> Welcome to Angular world</h2>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <!--suppress HtmlUnknownAnchorTarget -->
+            <a class="navbar-brand" href="#!/Home"></a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li>
+                <!--suppress HtmlUnknownAnchorTarget -->
+                <a href="#!/Home">Home</a></li>
+            <li>
+                <!--suppress HtmlUnknownAnchorTarget -->
+                <a href="#!/view1">view1</a></li>
+            <li
+                <!--suppress HtmlUnknownAnchorTarget -->
+            <a href="#!/view2">view2</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--[if lt IE 7]>
+<![endif]-->
+
+
+<div ng-view></div>
+
+<div>Angular seed app: v<span app-version></span></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+
+<script src="angular/angular.js"></script>
+
+<script src="angular-route/angular-route.js"></script>
+
+<script src="angular-route/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
+
+<script src="Home/home.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view1/view1.controller.js"></script>
+<script src="view1/view1.fc.js"></script>
+<script src="view2/view2.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
